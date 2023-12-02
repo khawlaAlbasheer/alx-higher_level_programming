@@ -5,4 +5,4 @@ for i in range(9):
         if i == 8 and j == 9:
             continue
         print(', ', end="")
-print('\n')
+
