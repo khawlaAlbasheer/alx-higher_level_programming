@@ -5,10 +5,12 @@ def print_matrix_integer(matrix=[[]]):
     length = len(matrix)
     if length == 1:
         return None
-    for i in range(length):
-        for j in range(length):
-            if j == length - 1:
-                print('{:d}'.format(matrix[i][j]), end="")
+    for row in matrix:
+        i = 0
+        for e in row:
+            i += 1
+            if i < len(row):
+                print('{:d} '.format(e), end="")
             else:
-                print('{:d} '.format(matrix[i][j]), end="")
+                print('{:d}'.format(e), end="")
         print()
