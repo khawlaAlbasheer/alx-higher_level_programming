@@ -2,6 +2,8 @@
 """add_integer:
     check the type of givene two value
     return the sum of the integer values"""
+
+
 def add_integer(a, b=98):
 
     """add two integers"""
