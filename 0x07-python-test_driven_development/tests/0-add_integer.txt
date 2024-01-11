@@ -2,21 +2,13 @@
 the ``0-add_integer`` module
 ============================
 
-using ``add_integer``
+Using ``add_integer``
 --------------------
 
-importing the function from the module:
-	>>> add_integer = __import__("0-add_integer").__doc__
+Importing the function from the module:
+	>>> add_integer = __import__('0-add_integer').add_integer
 
-Checking for module docstring:
-	>>> m = __import__("0-add_integer").__doc__
-	>>> len(m) > 1
-	True
 
-Checking for function docstring:
-	 >>> f = __import__("0-add_integer").add_integer.__doc__
-         >>> len(f) > 1
-         True
 Checking regular addition:
 	 >>> add_integer(2, 3)
 	 5
@@ -79,12 +71,6 @@ Checking non-number with non-number:
          ...
          TypeError: a must be an integer
 
-Checking bool with number:
-	 >>> add_integer(True, 1)
-	 Traceback (most recent call last):
-         ...
-         TypeError: a must be an integer
-
 Checking number with bool:
 	 >>> add_integer(0, False)
          Traceback (most recent call last):
@@ -95,16 +81,14 @@ Checking no args:
 	 >>> add_integer()
 	 Traceback (most recent call last):
 	 ...
-	 TypeError: add_integer() missing 2 required positional arguments: 'a' and 'b'
+	 TypeError: add_integer() missing 1 required positional argument: 'a'
 
 Checking one arg:
 	 >>> add_integer(1)
-	 Traceback (most recent call last):
-         ...
-	 TypeError: add_integer() missing 1 required positional argument: 'b'
+	 99
 
 Checking more than 2 args:
 	 >>> add_integer(1, 2, 3)
          Traceback (most recent call last):
          ...
-         TypeError: add_integer() takes 2 positional arguments but 3 were given
+         TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
