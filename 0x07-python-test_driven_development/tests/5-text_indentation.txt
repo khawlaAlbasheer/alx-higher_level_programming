@@ -1,0 +1,34 @@
+Using ``text_indentation.txt``
+-----------------------------
+
+text_indentation: will check the type of the argumants,
+prints a text with 2 new lines after each of these characters: ., ? and :
+
+First inport the module:
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Basic usage:
+	>>> text_indentation('Hello. World!')
+	Hello.
+	<BLANKLINE>
+	World!
+
+No passed arguments:
+	>>> text_indentation()
+	Traceback (most recent call last):
+	...
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Non str argument:
+	>>> text_indentation(9)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+
+Empty str argument:
+	>>> text_indentation('')
+	
+Str with no special char:
+	>>> text_indentation('my name is khawla')
+	my name is khawla
+
