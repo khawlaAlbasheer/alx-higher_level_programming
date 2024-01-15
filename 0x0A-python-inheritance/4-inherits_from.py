@@ -6,7 +6,8 @@ from the specified class"""
 
 def inherits_from(obj, a_class):
     """Return True if the object is instance of a class
-    or from inherited class"""
+    or from inherited class
+    """
     if issubclass(type(obj), a_class) and type(obj) != a_class:
         return True
     return False
