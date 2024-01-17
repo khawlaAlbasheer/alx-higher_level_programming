@@ -3,9 +3,6 @@
 dictionary representation of it's abjects"""
 
 
-import json
-
-
 class Student:
     """class Student that defines a student by:
     Public instance attributes:
@@ -23,5 +20,5 @@ class Student:
         return self.__dict__
 
     def to_json(self, attrs=None):
-        for key, value in json.item():
+        for key, value in attrs.item():
             self.__dict__[key] = value
