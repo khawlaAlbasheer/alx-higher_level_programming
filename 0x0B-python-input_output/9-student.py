@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""""""
+"""define class Student that retrieves
+dictionary representation of it's abjects"""
 
 
 class Student:
